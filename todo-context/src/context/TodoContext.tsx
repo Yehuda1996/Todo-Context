@@ -39,7 +39,6 @@ import {
       setTasks(savedTasks);
     }, []);
   
-    // Save tasks to localStorage whenever they change
     useEffect(() => {
       localStorage.setItem("tasks", JSON.stringify(tasks));
     }, [tasks]);
