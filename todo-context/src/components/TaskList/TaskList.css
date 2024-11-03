@@ -1,8 +1,13 @@
-.listContainer {
+/* TaskList.css */
+
+.taskList {
+    list-style-type: none;
     padding: 0;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .taskList li {
+    margin-bottom: 12px;
   }
   

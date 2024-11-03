@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useGlobalTodo } from "../../context/TodoContext";
-import './AddTaskForm.css'
+import './AddTaskForm.css';
 
 const AddTaskForm: React.FC = () => {
   const [taskText, setTaskText] = useState("");
@@ -15,7 +15,7 @@ const AddTaskForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="addTaskForm" onSubmit={handleSubmit}>
       <input
         type="text"
         value={taskText}
